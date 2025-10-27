@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5/css/bootstrap.css"/>
+    <script src="../bootstrap-5.3.5/js/bootstrap.bundle.js"></script>
+    <style>
+        #top-section{
+            background: url("./images/cover.jpg") no-repeat;
+            height: 800px;
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #bottom-section{
+            background: url("./images/footer.PNG") no-repeat;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid bg-opacity-25 mb-5" id="top-section">
+        <div class="row">
+            <div class="col d-flex justify-content-evenly p-3 mb-5">
+                <div class="align-content-center">
+                    <img src="./images/logo.png">
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Service</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="align-content-center">
+                    <button class="btn bg-success text-white fw-bold">Book Now</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-4">
+                <div class="mb-5">
+                    <p class="text-center text-white fs-3 fst-italic">Discover the world</p>
+                </div>
+                <div class="mb-5">
+                    <h1 class="text-center fw-bold display-4 text-white">Travel And Adventure Campaign</h1>
+                </div>
+                <div class="d-flex justify-content-center gap-4">
+                    <button class="btn bg-warning">Tour Guide</button>
+                    <button class="btn bg-white">About Us</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5 pb-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-4 shad">
+                <h5 class="text-center fw-bold">Popular Destinations</h5>
+                <h2 class="text-center fw-bold">Travel Most Popular Place In The World</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text ms-3 text-success">Egypt</p>
+                        <h5 class="card-title fw-bold">Traveler Standing on Stone</h5>
+                        <div class="text-secondary justify-content-around d-flex">
+                            <span>3 Days 4 Nights</span>
+                            <span>26</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text ms-3 text-success">India</p>
+                        <h5 class="card-title fw-bold">Taj Mahal, Agra, Uttar Pradesh, India</h5>
+                        <div class="text-secondary justify-content-around d-flex">
+                            <span>3 Days 4 Nights</span>
+                            <span>26</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text ms-3 text-success">Switzerland</p>
+                        <h5 class="card-title fw-bold">Man In Front of Calm Body of Water</h5>
+                        <div class="text-secondary justify-content-around d-flex">
+                            <span>3 Days 4 Nights</span>
+                            <span>26</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-4 mt-5">
+                <h5 class="text-center fw-bold">Latest News</h5>
+                <h2 class="text-center fw-bold">Updated News and Blog From Travelers</h2>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="text-secondary justify-content-between d-flex">
+                            <span>Masum Bilah</span>
+                            <span>19 Nov, 2023</span>
+                            <span>5 Mins</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Man Sitting the Grass Covered Mountains</h5>
+                        <p class="card-text ms-3 text-secondary">Lorem Ipsum dolor sit, amet consecteur.........</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="text-secondary justify-content-between d-flex">
+                            <span>Masum Bilah</span>
+                            <span>19 Nov, 2023</span>
+                            <span>5 Mins</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Man Sitting the Grass Covered Mountains</h5>
+                        <p class="card-text ms-3 text-secondary">Lorem Ipsum dolor sit, amet consecteur.........</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center align-items-center d-flex">
+                <div class="card" style="width: 24rem;">
+                    <img src="./images/sl6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="text-secondary justify-content-between d-flex">
+                            <span>Masum Bilah</span>
+                            <span>19 Nov, 2023</span>
+                            <span>5 Mins</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Man Sitting the Grass Covered Mountains</h5>
+                        <p class="card-text ms-3 text-secondary">Lorem Ipsum dolor sit, amet consecteur.........</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5" id="bottom-section">
+
+            <div class="row d-flex align-items-center justify-content-center gap-5 h-100 ms-5 ps-5 me-5 pe-5">
+                <div class="col h-75 text-white">
+                    <div class="mb-3">
+                        <img src="./images/logo.png">
+                    </div>
+                    <p>
+                        Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization.
+                    </p>
+                    <p class="m-0">example@gmail.com</p>
+                    <p class="m-0">070070070</p>
+                    <p class="m-0">203 Fake St, California, USA</p>
+                </div>
+                <div class="col h-75 text-white">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul>
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                        <li>Fourth</li>
+                        <li>Fifth</li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="col h-75 text-white">
+                    <h5 class="fw-bold mb-3">Support</h5>
+                    <ul>
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                        <li>Fourth</li>
+                        <li>Fifth</li>
+                    </ul>
+                    <p></p>
+                </div>
+                <div class="col h-75 text-white">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+                            <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+</html>

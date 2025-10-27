@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5/css/bootstrap.css"/>
+    <script src="../bootstrap-5.3.5/js/bootstrap.bundle.js"></script>
+    <style>
+        #top-section {
+            background-image: url("./images/cover.jpg");
+            height: 100vh;
+        }
+
+        #top-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1); /* dark overlay for better contrast */
+            z-index: 1;
+        }
+
+        #top-section > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .border-5 {
+            border-width: 15px !important;
+        }
+
+        #bottom-section {
+            background: url("./images/sl5.jpg") no-repeat;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid  mb-5 pt-3" id="top-section">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#">Averon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Tours</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="navbar-dark">
+            <h1 class="display-1 fw-bold text-white text-center">Discover world tour with Experts!</h1>
+            <div class="d-flex justify-content-center mt-5">
+                <p class="fs-4 w-75 text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    corporis doloremque pariatur quibusdam repellendus reprehenderit!</p>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <input type="email" class="form-control border-5 border-white border-opacity-50 w-75">
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-7 d-flex justify-content-center">
+            <img src="images/sl1.jpg">
+        </div>
+        <div class="col-4 d-flex align-items-center">
+            <div class="pe-5">
+                <h1>Trusted & Award Winning Tour Agency</h1>
+                <p class="mt-3">We are the largest and most celebrated network of professional travel agents in USA.
+                    Wherever you
+                    want to go, however you want to get there, whatever you want to do — we have the ideal travel agent
+                    just for you.</p>
+                <button class="btn btn-warning text-white p-3 px-5 rounded-0 fw-bold mt-3">See More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5 bg-secondary-subtle py-5">
+    <h1 class="fw-bold text-center mt-5">Our Trending Popular Tours</h1>
+    <p class="text-center fs-5 mt-5">Holidays and tours carefully designed to the best tourist destinations</p>
+
+
+    <div class="row mt-5 gap-5 mx-5 px-5">
+        <div class="col">
+            <div class="card border-0 bg-secondary-subtle">
+                <img src="./images/sl3.jpg" class="card-img-top p-3" alt="..." width="600" height="500">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-medium">Dubai, Dubai</p>
+                        <p class="fw-medium">5 Hours</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Dubai City Tour</h5>
+                        <a class="btn btn-warning text-white fw-bold fs-6">$570</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 bg-secondary-subtle">
+                <img src="./images/sl4.jpg" class="card-img-top p-3" alt="..." width="600" height="500">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-medium">Dubai, Dubai</p>
+                        <p class="fw-medium">5 Hours</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Dubai City Tour</h5>
+                        <a class="btn btn-warning text-white fw-bold fs-6">$570</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0 bg-secondary-subtle">
+                <img src="./images/sl5.jpg" class="card-img-top p-3" alt="..." width="600" height="500">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+                        <p class="fw-medium">Dubai, Dubai</p>
+                        <p class="fw-medium">5 Hours</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">Dubai City Tour</h5>
+                        <a class="btn btn-warning text-white fw-bold fs-6">$570</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container-fluid bg-dark d-flex p-0 gap-5">
+    <div id="bottom-section" class="d-flex align-items-center justify-content-center w-100">
+        <div>
+            <h1 class="text-center text-warning display-1  fw-bold">50%</h1>
+            <p class="text-center text-warning display-1 fw-bold">Discount</p>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <div>
+            <h1 class="text-white">Weekly Vacation Specials</h1>
+            <p class="mt-3 text-white w-75">These major suppliers provide our site with fantastic weekly specials. They
+                change every week, so come back often to see what is on sale. Each supplier has different rules on when
+                they post the specials and when you can purchase them.</p>
+            <button class="btn btn-warning text-white p-3 px-5 rounded-0 fw-bold mt-3">See More</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
