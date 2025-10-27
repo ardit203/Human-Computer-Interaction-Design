@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="">
+                <h1>Architecture</h1>
+                <h1 class="text-body-tertiary">Bureau</h1>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="{% static 'images/house3.jpg' %}"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <img src="{% static 'images/house4.jpg' %}"/>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="">
+                <p class="ms-5 ps-5 fs-5 text-body-tertiary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At distinctio id praesentium quas,
+                    recusandae rem reprehenderit sunt veniam! Dignissimos dolorum eum inventore laudantium nesciunt
+                    officia perspiciatis quidem sint sunt vero.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5 pt-5">
+    <h1 class="text-center mb-5">We offer variety of projects</h1>
+
+    <div class="row mb-5">
+        {% for p in properties %}
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card rounded-0 border-0 bg-secondary-subtle">
+                <img src="{{p.url}}" class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{p.name}}</h5>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6 ">Area</div>
+                        <div class="col-6 d-flex justify-content-end">{{p.area}} m2</div>
+                    </div>
+                    <hr/>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6 ">Price</div>
+                        <div class="col-6 d-flex justify-content-end">${{p.price}}</div>
+                    </div>
+                    <a href="{% url 'edit' id=p.id%}" class="btn btn-dark rounded-0 mt-4 px-4">Edit</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
+
+

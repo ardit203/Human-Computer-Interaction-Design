@@ -1,0 +1,61 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ps-5">
+            <a class="navbar-brand text-danger ms-5 ps-5" href="#">Cakery&Backery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5 pe-5" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'add' %}">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+{% block content%}
+{% endblock %}
+
+<footer>
+    <div class="container-fluid  bg-danger ">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-6 text-white">Copyright &copy; HCI 2024</div>
+                <div class="col-6">
+                    <div class="text-white d-flex justify-content-end gap-3">
+                        <span class="text-decoration-underline ">Privacy</span>
+                        <span class="text-decoration-underline">Terms</span>
+                        <span class="text-decoration-underline me-5"><a class="text-white" href="{% url 'add' %}">Add</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
