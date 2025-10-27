@@ -1,0 +1,28 @@
+https://docs.djangoproject.com/en/5.2/topics/db/queries/
+
+Lecture topics:
+    - object creation
+
+    - filter() and exclude()
+
+    - all() and get()
+
+    - slicing
+
+    - using ForeignKey attribute values
+
+    - lt(e) and gt(e)
+
+    - (i)exact, (i)contain, (i)startswith, (i)endswith
+
+    - django.db.models F()
+
+    - django.db.models Q()
+
+    - values() and values_list()
+
+    - order_by()
+
+    - __in
+
+    - exists()
