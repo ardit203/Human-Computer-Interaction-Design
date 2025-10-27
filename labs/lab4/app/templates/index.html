@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid py-5">
+    <h1 class="text-center">Our Cars</h1>
+    <div class="container py-5">
+        <div class="row d-flex justify-content-between">
+        {% for car in cars %}
+        <div class="col-4 mt-5">
+            <div class="card border-0">
+                <img src="{{car.image.url}}" class="card-img-top" alt="..." width="500" height="400">
+                <div class="card-body">
+                    <p class="card-text ms-3 text-success">{{car.manufacturer.name}}</p>
+                    <h5 class="card-title fw-bold">{{car.name}}</h5>
+                    <div class="text-secondary justify-content-between d-flex">
+                        <span>Type: {{car.type}}</span>
+                        <span>HP: {{car.horse_power}} hp</span>
+                        <span>Speed: {{car.max_speed}} km/h</span>
+                    </div>
+                    <a href="{% url 'details' car.id %}" class="btn btn-primary rounded-0 mt-3">Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

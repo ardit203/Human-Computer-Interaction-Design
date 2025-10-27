@@ -1,0 +1,31 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center gap-5 mt-5">
+    <div class="d-flex align-items-center">
+        <div>
+            <h1>Name: {{car.name}}</h1>
+            <h1 class="mt-5">Type: {{car.type}}</h1>
+            <h1 class="mt-5">Horse Power: {{car.horse_power}}</h1>
+            <h1 class="mt-5">Max Speed: {{car.max_speed}}</h1>
+            <h1 class="mt-5">Color: {{car.color}}</h1>
+        </div>
+
+    </div>
+    <div>
+        <img src="{{car.image.url}}" width="860" height="570">
+    </div>
+</div>
+<div class="container">
+    <a href="{% url 'index' %}" class="btn btn-primary w-100 rounded-0 mt-4 fw-medium fs-5">Go Back</a>
+</div>
+
+</body>
+</html>

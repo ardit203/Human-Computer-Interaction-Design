@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.5/css/bootstrap.css">
+  <script src="../bootstrap-5.3.5/js/bootstrap.bundle.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* HERO SECTION */
+    #hero {
+      background: url("./images/cover.jpg") no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+
+    #hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    #hero .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* FOOTER */
+    #footer {
+      background: url("./images/footer.jpg") no-repeat center/cover;
+      height: 350px;
+      color: white;
+      position: relative;
+    }
+
+    #footer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.75);
+    }
+
+    #footer .container {
+      position: relative;
+      z-index: 2;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section id="hero" class="text-white d-flex align-items-center">
+  <div class="container content text-center">
+    <h1 class="display-3 fw-bold mb-3">Discover the World with Global Adventures</h1>
+    <p class="fs-5 mb-4">From desert safaris to alpine hikes – we take you everywhere.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <button class="btn btn-warning text-white px-4 py-2 fw-bold">Explore Tours</button>
+      <button class="btn btn-outline-light px-4 py-2 fw-bold">Contact Us</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="container-fluid py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img src="./images/img1.jpg" class="img-fluid rounded" alt="About us image">
+    </div>
+    <div class="col-md-6 pe-5">
+      <h2 class="fw-bold">Why Choose Us?</h2>
+      <p class="mt-3">With over 20 years of experience in the travel industry, Global Adventures connects travelers to unique experiences worldwide. Our guides are locals who make your journey unforgettable.</p>
+      <button class="btn btn-success fw-bold mt-3">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- TRENDING TOURS -->
+<section class="container-fluid bg-light py-5">
+  <h2 class="fw-bold text-center mb-3">Trending Tours</h2>
+  <p class="text-center mb-5 text-secondary">Top-rated destinations chosen by travelers this month</p>
+
+  <div class="row justify-content-center gap-4">
+    <div class="col-md-3">
+      <div class="card border-0">
+        <img src="./images/img2.jpg" class="card-img-top" alt="Tour 1" width="433" height="288">
+        <div class="card-body">
+          <h5 class="fw-bold">Bali, Indonesia</h5>
+          <p class="text-secondary mb-2">5 Days 4 Nights</p>
+          <div class="d-flex justify-content-between">
+            <span class="text-warning fw-bold">$499</span>
+            <span>⭐ 4.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card border-0">
+        <img src="./images/img3.jpg" class="card-img-top" alt="Tour 2" width="433" height="288">
+        <div class="card-body">
+          <h5 class="fw-bold">Paris, France</h5>
+          <p class="text-secondary mb-2">4 Days 3 Nights</p>
+          <div class="d-flex justify-content-between">
+            <span class="text-warning fw-bold">$620</span>
+            <span>⭐ 4.9</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card border-0">
+        <img src="./images/img4.jpg" class="card-img-top" alt="Tour 3" width="433" height="288">
+        <div class="card-body">
+          <h5 class="fw-bold">Dubai, UAE</h5>
+          <p class="text-secondary mb-2">3 Days 2 Nights</p>
+          <div class="d-flex justify-content-between">
+            <span class="text-warning fw-bold">$550</span>
+            <span>⭐ 4.7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALS (from ex3.html) -->
+<section class="bg-black d-flex py-5">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <h1 class="display-3 text-warning fw-bold">50% OFF</h1>
+        <p class="text-warning fs-2">Weekly Specials</p>
+      </div>
+      <div class="col-md-6 text-white">
+        <h2>Weekly Vacation Deals</h2>
+        <p class="w-75">These exclusive travel packages offer massive savings. They rotate weekly, so check back often for new destinations and offers.</p>
+        <button class="btn btn-warning text-white fw-bold mt-3">View Offers</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="container py-5">
+  <h2 class="fw-bold text-center mb-4">What Our Travelers Say</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <div class="card p-3">
+        <p>"Best experience ever! From the booking to the trip itself, everything was seamless."</p>
+        <p class="fw-bold mb-0">– Emily R.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3">
+        <p>"Our guide was incredibly knowledgeable. The places we visited were breathtaking!"</p>
+        <p class="fw-bold mb-0">– Carlos D.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card p-3">
+        <p>"I’ll definitely travel again with Global Adventures. Everything was perfect, 10/10 service."</p>
+        <p class="fw-bold mb-0">– Priya K.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" class="mt-5">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md text-white">
+
+        <p>Your trusted travel partner to explore the most beautiful corners of the planet.</p>
+        <p class="m-0">info@globaladventures.com</p>
+        <p class="m-0">+1 222 333 444</p>
+        <p class="m-0">New York, USA</p>
+      </div>
+      <div class="col-md text-white">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul>
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Tours</a></li>
+          <li><a href="#" class="text-white">Services</a></li>
+          <li><a href="#" class="text-white">Blog</a></li>
+          <li><a href="#" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md text-white">
+        <h5 class="fw-bold mb-3">Support</h5>
+        <ul>
+          <li><a href="#" class="text-white">FAQs</a></li>
+          <li><a href="#" class="text-white">Privacy Policy</a></li>
+          <li><a href="#" class="text-white">Terms of Service</a></li>
+          <li><a href="#" class="text-white">Help Center</a></li>
+          <li><a href="#" class="text-white">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col-md text-white">
+        <h5 class="fw-bold mb-3">Newsletter</h5>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <div class="form-text text-white">We’ll never share your email.</div>
+          </div>
+          <button class="btn btn-success">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

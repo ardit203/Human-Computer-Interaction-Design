@@ -1,0 +1,91 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+
+    <style>
+        #top-section {
+            position: relative; /* so ::before overlays this element */
+            min-height: 100vh;
+
+            /* one-line shorthand: image + position + size + repeat */
+            background: url("{% static 'images/cover3.jpg' %}") center center / cover no-repeat;
+        }
+
+        #top-section::before {
+            content: "";
+            position: absolute;
+            inset: 0; /* shorthand for top/right/bottom/left: 0 */
+            background: rgba(0, 0, 0, 0.4); /* subtle dark overlay */
+            z-index: 1;
+        }
+
+        #top-section > * {
+            position: relative;
+            z-index: 2; /* keep content above the overlay */
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid pt-3" id="top-section">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#">Cars4Life</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="{% url 'add' %}">Add</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fs-5" href="#">Services</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="navbar-dark">
+            <h1 class="display-1 fw-bold text-white text-center">Discover world best cars!</h1>
+            <div class="d-flex justify-content-center mt-5">
+                <p class="fs-4 w-75 text-center text-white fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    corporis doloremque pariatur quibusdam repellendus reprehenderit!</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+    {% block content%}
+    {% endblock%}
+
+
+<div class="container-fluid bg-primary p-5">
+    <h1 class="fs-1 text-center">FCSE (FINKI) 2025</h1>
+</div>
+
+
+
+</body>
+</html>

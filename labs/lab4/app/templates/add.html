@@ -1,0 +1,25 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+</head>
+<body>
+
+
+    <div class="container d-flex justify-content-center mt-5">
+        <form method="post" action="{% url 'add' %}" enctype="multipart/form-data"
+          class="w-75 bg-secondary-subtle p-5 ">
+        <p class="fs-3 fw-bold text-center">Add new car</p>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary rounded-0 w-100">Submit</button>
+    </form>
+    </div>
+
+
+
+</body>
+</html>
